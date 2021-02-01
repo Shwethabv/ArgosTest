@@ -1,0 +1,50 @@
+{
+    "compilerOptions": {
+      "target": "es2016",
+      "module": "commonjs",
+      "lib": [
+        "es2017",
+        "dom"
+      ],
+      "moduleResolution": "node",
+      "sourceMap": true,
+      "declaration": true,
+      "removeComments": false,
+      "noImplicitAny": false,
+      "esModuleInterop": true,
+      "emitDecoratorMetadata": true,
+      "experimentalDecorators": true,
+      "types": [
+        "jasmine",
+        "node"
+      ],
+      "allowJs": false,
+      "rootDir": "src/",
+      "outDir": "build-js",
+      "baseUrl": ".",
+      "paths": {
+        "#root": [
+          "."
+        ]
+/*         "#Enum": [
+          "src/action-handlers/Enums"
+        ],
+        "#IImageServices": [
+          "src/helpers/image/IImageServices"
+        ],
+        "#ImagePathRepository": [
+          "src/helpers/image/ImagePathRepository"
+        ],
+        "#JSImageHelper": [
+          "src/helpers/image/JSImageHelper"
+        ] */
+      }
+    },
+    "include": [
+      "src/**/*"
+    ],
+    "exclude": [
+      "node_modules",
+      "build-js"
+    ]
+  }

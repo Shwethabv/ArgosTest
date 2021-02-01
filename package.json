@@ -1,0 +1,28 @@
+{
+  "name": "c",
+  "version": "1.0.0",
+  "description": "",
+  "main": "build-js/index.js",
+  "dependencies": {
+    "@types/jasmine": "^3.6.3",
+    "jasmine": "^3.6.4",
+    "mkdirp": "^1.0.4",
+    "node": "^15.4.0",
+    "protractor": "^7.0.0",
+    "protractor-beautiful-reporter": "^1.3.6",
+    "rimraf": "^3.0.2"
+  },
+  "devDependencies": {
+    "@types/node": "^14.14.22"
+  },
+  "scripts": {
+    "wdsetup": "webdriver-manager update",
+    "clean": "rimraf build-js",
+    "tsc": "tsc",
+    "build": "npm run clean & npm run tsc",
+    "pretest": "npm run build & mkdirp logs",
+    "test": "protractor build-js/config.js"
+  },
+  "author": "",
+  "license": "ISC"
+}
