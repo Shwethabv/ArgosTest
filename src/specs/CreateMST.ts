@@ -27,7 +27,7 @@ describe('Create Multiple Snapshot', () => {
         await browser.sleep(3000);
         await multiplesnapshot.ClickSaveMS();
         await multiplesnapshot.ClickBrowseSnapshot();
-        await browser.sleep(3000);
+        await browser.sleep(4000);
         var MSName =await multiplesnapshot.GetsnapshotName();
         console.log(MSName);
         expect(MSName).toBe('MultipleSnaphotTest');
